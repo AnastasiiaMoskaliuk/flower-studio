@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+
+  @media screen and (min-width: 768px) {
+    gap: 72px;
+  }
+
+  @media screen and (min-width: 1280px) {
+
+  }
+  &__logo {
+    width: 45px;
+    height: 35px;
+
+    @media screen and (min-width: 768px) {
+      width: 72px;
+      height: 57px;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 24px;
+    }
+  }
+
+  &__item {
+    font-size: 20px;
+    color: $text-header;
+  }
+
+  &__button-contacts{
+    border: none;
+    background-color: transparent;
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 14px;
+
+    &-svg {
+      width: 22px;
+      height: 22px;
+      
+      @media (min-width: 1280px) {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+}

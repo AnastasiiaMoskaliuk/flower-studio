@@ -1,0 +1,101 @@
+.footer {
+  background-color: $footer-bg-color;
+  color: $text-footer;
+  padding: 32px 0;
+  
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    @media screen and (min-width: 768px) {
+      gap: 50px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      justify-content: space-between;
+      gap: 100px;
+    }
+  }
+  &__logo {
+    display: none;
+    @media screen and (min-width: 1280px) {
+      display: flex;
+    }
+    &-svg {
+      width: 73px;
+      height: 57px;
+    }
+  }
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    &-container{
+      display: flex;
+      gap: 96px;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 700;
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__navigation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__navigation-item {
+    color: $text-footer;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 180px;
+  }
+
+  &__contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  &__contacts-link {
+    color: $text-footer;
+  }
+  &__time {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    &-text {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__time-title {
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 700;
+  }
+
+  &__networks {
+    display: flex;
+    gap: 14px;
+    @media screen and (min-width: 768px) {
+      flex-direction: column;
+    }
+    &-svg-1,
+    &-svg-2 {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}

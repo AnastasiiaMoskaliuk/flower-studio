@@ -1,0 +1,125 @@
+.delivery {
+  margin-bottom: 60px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-size: 24px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      font-size: 44px;
+    }
+  }
+
+  &__line {
+    flex-grow: 1;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 19px;
+
+    list-style-type: none;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+
+  &__list .delivery__item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    counter-increment: my-counter;
+  }
+
+  &__item {
+    display: flex;
+    font-weight: 500;
+
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
+}
+
+.delivery__list .delivery__item::before {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  content: counter(my-counter);
+
+  border: 1px solid black;
+  border-radius: 100px;
+
+  padding: 15px;
+  width: 30px;
+  height: 30px;
+}
+
+.delivery__list .delivery__item:nth-child(1)::before {
+  content: counter(my-counter);
+
+  font-size: 20px;
+
+  width: 40px;
+  height: 40px;
+  padding: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+}
+
+.delivery__list .delivery__item:nth-child(2)::before {
+  content: counter(my-counter);
+
+  font-size: 20px;
+
+  width: 40px;
+  height: 40px;
+  padding: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+}
+
+.delivery__list .delivery__item:nth-child(3)::before {
+  content: counter(my-counter);
+
+  font-size: 20px;
+
+  width: 40px;
+  height: 40px;
+  padding: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+}
+
+.delivery__list .delivery__item:nth-child(4)::before {
+  content: counter(my-counter);
+
+  font-size: 20px;
+
+  width: 40px;
+  height: 40px;
+  padding: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+}
